@@ -1,0 +1,30 @@
+body{
+	background-color: dimgray ;
+}
+.image{
+	display: block;
+	margin: auto;
+	border-radius: 6px;
+	width: 150px;
+	height: 100px;
+}
+.btn{
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+#mainList{
+	border: 1px solid black;
+}
+.theItem{
+	background-color: lightgrey ;
+}
+#h2Title, #h3Title{
+	text-align: center;
+	color: skyblue;
+}
+blockquote {
+	border-left: 2px solid darkgray;
+	padding-left: 6px;
+}
