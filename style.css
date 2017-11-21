@@ -1,5 +1,5 @@
 body{
-	background-color: dimgray ;
+	background-color: dimgray;
 }
 .image{
 	display: block;
@@ -18,9 +18,9 @@ body{
 	border: 1px solid black;
 }
 .theItem{
-	background-color: lightgrey ;
+	background-color: lightgrey;
 }
-#h2Title, #h3Title{
+#h3Title{
 	text-align: center;
 	color: skyblue;
 }
