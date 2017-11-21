@@ -5,16 +5,6 @@
 		this.products = gems;
 	});
 	
-	app.controller('PanelController', function(){
-		this.tab = 1;
-		this.selectTab = function(setTab) {
-			this.tab = setTab;
-		}
-		this.isSelected = function(checkTab) {
-			return this.tab === checkTab;
-		}
-	});
-	
 	app.controller('ReviewController', function(){
 		this.review = {};
 		this.addReview = function(product){
@@ -29,6 +19,23 @@
 			templateUrl: 'product-title.html'
 		};
 	});
+
+	app.directive('productPanels', function(){
+		return{
+			restrict: 'E',
+			templateUrl: 'product-panels.html',
+			controller: function(){
+				this.tab = 1;
+				this.selectTab = function(setTab) {
+					this.tab = setTab;
+				}
+				this.isSelected = function(checkTab) {
+					return this.tab === checkTab;
+				}
+			},
+			controllerAs: 'tab'
+		};
+	});
 	
 	var gems = [
 		{
@@ -37,10 +44,9 @@
 			description: 'blazzing hot pan, olive oil, salt, done.',
 			canPurchase: true,
 			images: [
-				{
-					full: 'images/lokum1Full.jpg',
-					thumb: 'images/lokum1Thumb.jpg'
-				}
+				'images/Lokum1Full.jpg',
+				'images/Lokum1Thumb.jpg'
+				
 			],
 			reviews: [
 				{
@@ -61,10 +67,8 @@
 			description: 'Huge steak with oils.',
 			canPurchase: true,
 			images: [
-				{
-					full: 'images/Dallas1Thumb.jpg',
-					thumb: 'images/Dallas1Thumb.jpg'
-				}
+				'images/Dallas1Thumb.jpg',
+				'images/Dallas1Thumb.jpg'
 			],
 			reviews: [
 				{
