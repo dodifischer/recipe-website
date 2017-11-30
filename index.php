@@ -37,6 +37,22 @@
 					<product-title></product-title>
 					<img class="image" ng-src="{{product.images[0]}}"/><br>
 					<product-panels></product-panels>
+				</li>
+				<li>
+					<?php
+						$query = "SELECT * FROM Recipe";
+						$result = mysqli_query($con, $query);
+						
+						while($row = mysqli_fetch_assoc($result)){
+							$name = $row['name'];
+							$preparation = $row['preparation'];
+							$ingredients = $row['ingredients'];
+							echo '-' . $name . '-' . '<br>';
+							echo 'Preparation: ' . $preparation . '<br>';
+							echo 'Ingredients: ' . $ingredients . '<br><br>';
+						}
+					?>
+				</li>
 			</ul>
 		</div>
 		<div class="col-sm-4"></div>
