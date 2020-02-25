@@ -4,7 +4,7 @@ body{
 .image{
 	display: block;
 	margin: auto;
-	border-radius: 6px;
+	border-radius: 8px;
 	width: 150px;
 	height: 100px;
 }
