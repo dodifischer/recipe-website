@@ -25,7 +25,7 @@
 			echo "The requested DB exists". "<br>";
 		}
 		else{
-			die('You do not know the fucking DB that you want to connect to eh?');
+			die('You do not know the freaking DB that you want to connect to eh?');
 		}
 	?>
 	<h3 id="h3Title">{{"Hola a todos!"}}<br>{{"Thees weell be a recipee website"}}</h3>
